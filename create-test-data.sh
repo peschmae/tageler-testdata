@@ -220,7 +220,7 @@ cr_tageler_5=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{ \"title\": \"Multi-Unit 1\", \"text\": \"Shouldn't change much\", \"group\": [ [ \"obsidian\", \"turmalin\" ] ], \"start\": \"2018-01-19T11:00:00.000Z\", \"end\": \"2018-01-19T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-14T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{ \"title\": \"Multi-Unit 1\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\"], \"start\": \"2018-01-19T11:00:00.000Z\", \"end\": \"2018-01-19T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-14T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -236,7 +236,7 @@ cr_tageler_6=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{ \"title\": \"Multi-Unit 2\", \"text\": \"Shouldn't change much\", \"group\": [ [ \"obsidian\", \"turmalin\", \"gürbe\", \"bratwurscht\", \"baghira\", \"rikki-tikki\" ] ], \"start\": \"2018-01-26T11:00:00.000Z\", \"end\": \"2018-01-26T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-24T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{ \"title\": \"Multi-Unit 2\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\", \"gürbe\", \"bratwurscht\", \"baghira\", \"rikki-tikki\"], \"start\": \"2018-01-26T11:00:00.000Z\", \"end\": \"2018-01-26T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-24T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -252,7 +252,7 @@ cr_tageler_7=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{ \"title\": \"Multi-Unit 3\", \"text\": \"Shouldn't change much\", \"group\": [ [ \"obsidian\", \"turmalin\", \"bratwurscht\", \"baghira\" ] ], \"start\": \"2018-01-30T11:00:00.000Z\", \"end\": \"2018-01-30T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-28T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{ \"title\": \"Multi-Unit 3\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\", \"bratwurscht\", \"baghira\"], \"start\": \"2018-01-30T11:00:00.000Z\", \"end\": \"2018-01-30T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-28T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
