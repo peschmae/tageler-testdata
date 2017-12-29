@@ -31,20 +31,20 @@ UEBUNGSFREI_IMAGE='iVBORw0KGgoAAAANSUhEUgAAAeAAAAFoCAIAAAAAVb93AAAAGXRFWHRTb2Z0d
 #
 # Create Units
 #
-printf "$NC Create Equipe Bratwurscht:"
-cr_eq_bratwurscht=$(curl --silent \
+printf "$NC Create Equipe Patria:"
+cr_eq_patria=$(curl --silent \
   --request POST \
   --url "$API_HOST/api/v1/group/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data '{"type": "Equipe", "name": "bratwurscht"}' \
+  --data '{"type": "Equipe", "name": "Patria"}' \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
-if [ "$cr_eq_bratwurscht" -eq "200" ]; then
+if [ "$cr_eq_patria" -eq "200" ]; then
   printf "$GREEN Success\n"
 else
-  printf "$RED Error\nStatus Code: $cr_eq_bratwurscht\n"
+  printf "$RED Error\nStatus Code: $cr_eq_patria\n"
 fi
 
 printf "$NC Create Trupp Gürbe:"
@@ -141,6 +141,38 @@ if [ "$cr_tr_rikki" -eq "200" ]; then
   printf "$GREEN Success\n"
 else
   printf "$RED Error\nStatus Code: $cr_tr_rikki\n"
+fi
+
+printf "$NC Create Meute Tschil:"
+cr_tr_tschil=$(curl --silent \
+  --request POST \
+  --url "$API_HOST/api/v1/group/admin/create" \
+  --header 'cache-control: no-cache' \
+  --header 'content-type: application/json' \
+  --data '{"type": "Meute", "name": "tschil"}' \
+  --write-out "\n\n%{http_code}" \
+  | grep -o "^[0-9]*$")
+
+if [ "$cr_tr_tschil" -eq "200" ]; then
+  printf "$GREEN Success\n"
+else
+  printf "$RED Error\nStatus Code: $cr_tr_tschil\n"
+fi
+
+printf "$NC Create Meute Raschka:"
+cr_tr_raschka=$(curl --silent \
+  --request POST \
+  --url "$API_HOST/api/v1/group/admin/create" \
+  --header 'cache-control: no-cache' \
+  --header 'content-type: application/json' \
+  --data '{"type": "Meute", "name": "raschka"}' \
+  --write-out "\n\n%{http_code}" \
+  | grep -o "^[0-9]*$")
+
+if [ "$cr_tr_raschka" -eq "200" ]; then
+  printf "$GREEN Success\n"
+else
+  printf "$RED Error\nStatus Code: $cr_tr_raschka\n"
 fi
 
 
