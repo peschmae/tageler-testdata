@@ -185,7 +185,7 @@ cr_tageler_1=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{\"title\": \"Obsidian 1\", \"text\": \"Dies ist ein Test\", \"group\": [[\"obsidian\"]], \"start\": \"2017-12-22T11:00:00.000Z\", \"end\": \"2017-12-22T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": {\"deadline\": \"2017-12-17T20:00:00.000Z\", \"contact\": [{\"name\": \"asd\", \"phone\": \"asd\", \"mail\": \"\", \"other\": \"\"}]}, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{\"title\": \"Obsidian 1\", \"text\": \"Dies ist ein Test\", \"group\": [[\"obsidian\"]], \"start\": \"2018-12-22T11:00:00.000Z\", \"end\": \"2018-12-22T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": {\"deadline\": \"2018-12-17T20:00:00.000Z\", \"contact\": [{\"name\": \"asd\", \"phone\": \"asd\", \"mail\": \"\", \"other\": \"\"}]}, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -201,7 +201,7 @@ cr_tageler_2=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{\"title\": \"Obsidian 2\", \"text\": \"Dies ist ein Test\", \"group\": [[\"obsidian\"]], \"start\": \"2017-12-29T11:00:00.000Z\", \"end\": \"2017-12-29T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": {\"deadline\": \"2017-12-22T20:00:00.000Z\", \"contact\": [{\"name\": \"asd\", \"phone\": \"asd\", \"mail\": \"\", \"other\": \"\"}]}, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{\"title\": \"Obsidian 2\", \"text\": \"Dies ist ein Test\", \"group\": [[\"obsidian\"]], \"start\": \"2018-12-29T11:00:00.000Z\", \"end\": \"2018-12-29T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": {\"deadline\": \"2018-12-22T20:00:00.000Z\", \"contact\": [{\"name\": \"asd\", \"phone\": \"asd\", \"mail\": \"\", \"other\": \"\"}]}, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -217,7 +217,7 @@ cr_tageler_3=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{\"title\": \"Obsidian 3\", \"text\": \"Dies ist ein Test\", \"group\": [[\"obsidian\"]], \"start\": \"2018-01-07T11:00:00.000Z\", \"end\": \"2018-01-07T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": {\"deadline\": \"2018-01-02T20:00:00.000Z\", \"contact\": [{\"name\": \"asd\", \"phone\": \"asd\", \"mail\": \"\", \"other\": \"\"}]}, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{\"title\": \"Obsidian 3\", \"text\": \"Dies ist ein Test\", \"group\": [[\"obsidian\"]], \"start\": \"2018-05-07T11:00:00.000Z\", \"end\": \"2018-05-07T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": {\"deadline\": \"2018-05-02T20:00:00.000Z\", \"contact\": [{\"name\": \"asd\", \"phone\": \"asd\", \"mail\": \"\", \"other\": \"\"}]}, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -233,7 +233,7 @@ cr_tageler_4=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{\"title\": \"Übungsfrei Obsidian\", \"text\": \"Dilligaf\", \"group\": [\"obsidian\"], \"start\": \"2018-01-15T22:00:00.000Z\", \"end\": \"2018-01-15T22:00:00.000Z\", \"bringAlong\": \"free\", \"uniform\": \"free\", \"picture\": \"$UEBUNGSFREI_IMAGE\", \"checkout\": {\"deadline\": null, \"contact\": [{\"name\": null, \"phone\": null, \"mail\": null, \"other\": null}]}, \"free\": true, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{\"title\": \"Übungsfrei Obsidian\", \"text\": \"Dilligaf\", \"group\": [\"obsidian\"], \"start\": \"2018-05-15T22:00:00.000Z\", \"end\": \"2018-05-15T22:00:00.000Z\", \"bringAlong\": \"free\", \"uniform\": \"free\", \"picture\": \"$UEBUNGSFREI_IMAGE\", \"checkout\": {\"deadline\": null, \"contact\": [{\"name\": null, \"phone\": null, \"mail\": null, \"other\": null}]}, \"free\": true, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -253,7 +253,7 @@ cr_tageler_5=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{ \"title\": \"Multi-Unit 1\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\"], \"start\": \"2018-01-19T11:00:00.000Z\", \"end\": \"2018-01-19T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-14T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{ \"title\": \"Multi-Unit 1\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\"], \"start\": \"2018-05-19T11:00:00.000Z\", \"end\": \"2018-05-19T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-05-14T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -269,7 +269,7 @@ cr_tageler_6=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{ \"title\": \"Multi-Unit 2\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\", \"gürbe\", \"bratwurscht\", \"baghira\", \"rikki-tikki\"], \"start\": \"2018-01-26T11:00:00.000Z\", \"end\": \"2018-01-26T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-24T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{ \"title\": \"Multi-Unit 2\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\", \"gürbe\", \"bratwurscht\", \"baghira\", \"rikki-tikki\"], \"start\": \"2018-05-26T11:00:00.000Z\", \"end\": \"2018-05-26T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-05-24T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -285,7 +285,7 @@ cr_tageler_7=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{ \"title\": \"Multi-Unit 3\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\", \"bratwurscht\", \"baghira\"], \"start\": \"2018-01-30T11:00:00.000Z\", \"end\": \"2018-01-30T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-01-28T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{ \"title\": \"Multi-Unit 3\", \"text\": \"Shouldn't change much\", \"group\": [\"obsidian\", \"turmalin\", \"bratwurscht\", \"baghira\"], \"start\": \"2018-05-30T11:00:00.000Z\", \"end\": \"2018-05-30T14:00:00.000Z\", \"bringAlong\": \"BPMSTZ und Zvieri\", \"uniform\": \"Uniform und Kravatte, dem Wetter angepasste Kleidung\", \"picture\": \"$IMAGE\", \"checkout\": { \"deadline\": \"2018-05-28T21:00:00.000Z\", \"contact\": [ { \"name\": \"no one\", \"phone\": \"doesn't matter\", \"mail\": \"\", \"other\": \"\" } ] }, \"free\": false, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -301,7 +301,7 @@ cr_tageler_8=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{ \"title\": \"Übungsfrei Multi-Unit 1\", \"text\": \"Dilligaf\", \"group\": [ \"obsidian\", \"turmalin\", \"rikki-tikki\", \"bratwurscht\" ], \"start\": \"2018-02-07T22:00:00.000Z\", \"end\": \"2018-02-07T22:00:00.000Z\", \"bringAlong\": \"free\", \"uniform\": \"free\", \"picture\": \"$UEBUNGSFREI_IMAGE\", \"checkout\": { \"deadline\": null, \"contact\": [ { \"name\": null, \"phone\": null, \"mail\": null, \"other\": null } ] }, \"free\": true, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{ \"title\": \"Übungsfrei Multi-Unit 1\", \"text\": \"Dilligaf\", \"group\": [ \"obsidian\", \"turmalin\", \"rikki-tikki\", \"bratwurscht\" ], \"start\": \"2018-06-07T22:00:00.000Z\", \"end\": \"2018-06-07T22:00:00.000Z\", \"bringAlong\": \"free\", \"uniform\": \"free\", \"picture\": \"$UEBUNGSFREI_IMAGE\", \"checkout\": { \"deadline\": null, \"contact\": [ { \"name\": null, \"phone\": null, \"mail\": null, \"other\": null } ] }, \"free\": true, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
@@ -317,7 +317,7 @@ cr_tageler_9=$(curl --silent \
   --url "$API_HOST/api/v1/tageler/admin/create" \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
-  --data "{ \"title\": \"Übungsfrei Multi-Unit 2\", \"text\": \"Dilligaf\", \"group\": [ \"lapislazuli\", \"turmalin\", \"baghira\", \"bratwurscht\" ], \"start\": \"2018-02-15T22:00:00.000Z\", \"end\": \"2018-02-15T22:00:00.000Z\", \"bringAlong\": \"free\", \"uniform\": \"free\", \"picture\": \"$UEBUNGSFREI_IMAGE\", \"checkout\": { \"deadline\": null, \"contact\": [ { \"name\": null, \"phone\": null, \"mail\": null, \"other\": null } ] }, \"free\": true, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
+  --data "{ \"title\": \"Übungsfrei Multi-Unit 2\", \"text\": \"Dilligaf\", \"group\": [ \"lapislazuli\", \"turmalin\", \"baghira\", \"bratwurscht\" ], \"start\": \"2018-06-15T22:00:00.000Z\", \"end\": \"2018-06-15T22:00:00.000Z\", \"bringAlong\": \"free\", \"uniform\": \"free\", \"picture\": \"$UEBUNGSFREI_IMAGE\", \"checkout\": { \"deadline\": null, \"contact\": [ { \"name\": null, \"phone\": null, \"mail\": null, \"other\": null } ] }, \"free\": true, \"background_color\": \"#ededed\", \"color\": \"#b00\"}" \
   --write-out "\n\n%{http_code}" \
   | grep -o "^[0-9]*$")
 
